@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connect Four</title>
+  <link rel="stylesheet" type="text/css" href="connect4.css">
+</head>
+<body>
+  <h1>Connect Four</h1>
+  <table id="board">
+    <tr id="column-top">
+      <td class="clickable" onclick="handleClick(0)"></td>
+      <td class="clickable" onclick="handleClick(1)"></td>
+      <td class="clickable" onclick="handleClick(2)"></td>
+      <td class="clickable" onclick="handleClick(3)"></td>
+      <td class="clickable" onclick="handleClick(4)"></td>
+      <td class="clickable" onclick="handleClick(5)"></td>
+      <td class="clickable" onclick="handleClick(6)"></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+  <button onclick="resetGame()">Reset</button>
+  <script src="connect4.js"></script>
+</body>
+</html>

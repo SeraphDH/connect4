@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column to stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #board-container {
+    margin-top: 20px; /* Add some top margin to the board container */
+  }
+  
+  table {
+    border-collapse: collapse;
+    background-color: skyblue;
+  }
+  
+  td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  
+  .player1 {
+    background-color: red;
+  }
+  
+  .player2 {
+    background-color: yellow;
+  }
+  
+  #reset-button {
+    margin-top: 20px; /* Add some top margin to the reset button */
+  }
+  
