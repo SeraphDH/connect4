@@ -1,6 +1,6 @@
 body {
     display: flex;
-    flex-direction: column; /* Set the flex direction to column to stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,17 +11,21 @@ body {
   }
   
   #board-container {
-    margin-top: 20px; /* Add some top margin to the board container */
+    margin-top: 20px;
   }
   
   table {
     border-collapse: collapse;
     background-color: skyblue;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px; /* Update width of the game board */
+    height: 400px; /* Update height of the game board */
   }
   
   td {
-    width: 50px;
-    height: 50px;
+    width: 60px; /* Update width of each cell */
+    height: 60px; /* Update height of each cell */
     border: 1px solid black;
     text-align: center;
     vertical-align: middle;
@@ -49,6 +53,19 @@ body {
   }
   
   #reset-button {
-    margin-top: 20px; /* Add some top margin to the reset button */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9999;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Add border-radius property to round the edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect for smooth color change */
+  }
+  
+  #reset-button:hover {
+    background-color: #ff6666; /* Update background color on hover */
   }
   
